@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{home/node_modules}" />
+    <file url="file://$PROJECT_DIR$/packages/meteor-react-router-ssr/.npm/package" libraries="{home/packages/meteor-react-router-ssr/.npm/package/node_modules}" />
+    <file url="file://$PROJECT_DIR$/packages/minifier-css/.npm/package" libraries="{home/packages/minifier-css/.npm/package/node_modules}" />
+    <file url="file://$PROJECT_DIR$/packages/standard-minifier-css/.npm/plugin/minifyStdCSS" libraries="{home/packages/standard-minifier-css/.npm/plugin/minifyStdCSS/node_modules}" />
+    <file url="PROJECT" libraries="{meteor-packages-auto-import-browser, meteor-packages-auto-import-npm}" />
+    <includedPredefinedLibrary name="ECMAScript 6" />
+    <includedPredefinedLibrary name="Meteor project library" />
+  </component>
+</project>
