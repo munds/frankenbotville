@@ -14,6 +14,8 @@ import Home from './routes/Home';
 import About from './routes/About';
 import AllReports from './routes/AllReports';
 import EditReport from './routes/EditReport';
+import Bots from './routes/Bots';
+import EditBot from './routes/EditBot';
 
 class App extends React.Component {
   render() {
@@ -41,6 +43,8 @@ export default (
     <IndexRoute component={Home} />
     <Route path='/reports' component={AllReports} />
     <Route path='/report/edit/:id' component={EditReport} />
+    <Route path='/bots' component={Bots} />
+    <Route path='/bot/edit/:id' component={EditBot} />
     <Route path='/about' component={About} />
     <Redirect path='*' to='/' />
   </Route>
