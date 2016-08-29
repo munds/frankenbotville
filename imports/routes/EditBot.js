@@ -36,10 +36,12 @@ class EditBotForm extends React.Component {
 
 		let bot = input.value;
 		let url = urlInput.value;
+		let desc = descInput.value;
+		let ip = ipInput.value;
 
 		let { _id } = this.props.bot;
 
-		Meteor.call('bots.update', _id, bot, url, (err, n) => {
+		Meteor.call('bots.update', _id, bot, url, desc, ip, (err, n) => {
 			if (err) {
 				this.setState({
 					errors: [ ].concat(err),
@@ -78,6 +80,14 @@ class EditBotForm extends React.Component {
 					<FormGroup controlId='botUrl'>
 						<ControlLabel>Bot Url</ControlLabel>
 						<FormControl type='text' placeholder='A bot item...' defaultValue={url} ref={(inputUrl) => this.inputUrl = inputUrl} autoFocus />
+					</FormGroup>
+					<FormGroup controlId="formControlsIp">
+						<ControlLabel>Bot Ip</ControlLabel>
+						<FormControl type='text' placeholder='192.168.1.1' ref="ipInput" autoFocus />
+					</FormGroup>
+					<FormGroup controlId="formControlsDesc">
+						<ControlLabel>Bot Description</ControlLabel>
+						<FormControl componentClass='textarea' placeholder='Bot Description' ref="urlInput" autoFocus />
 					</FormGroup>
 					<FormGroup>
 						<Button type='submit' bsStyle='blue' onlyOnHover>Update Bot</Button>

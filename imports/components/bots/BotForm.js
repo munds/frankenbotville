@@ -45,7 +45,7 @@ export default class BotForm extends React.Component {
 
 		nameInput.value = "";
 		urlInput.value = "";
-		descInut.value = "";
+		descInput.value = "";
 		ipInput.value = "";
 	}
 
@@ -80,7 +80,7 @@ export default class BotForm extends React.Component {
 						</FormGroup>
 						<FormGroup controlId="formControlsDesc">
 							<ControlLabel>Bot Description</ControlLabel>
-							<FormControl componentClass='textarea' placeholder='Bot Description' ref="urlInput" autoFocus />
+							<FormControl componentClass='textarea' placeholder='Bot Description' ref="descInput" autoFocus />
 						</FormGroup>
 						<FormGroup>
 							<Col smOffset={2} sm={10}>
